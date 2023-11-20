@@ -6,15 +6,12 @@
 
 		<div
 			class="flex items-center justify-center h-screen animate__animated animate__zoomIn">
-			<div class="p-4 text-white shadow">
-				<div
-					class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-5">
-					<div class="md:flex">
+			< class="p-4 text-white shadow">
+			<div
+				class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl m-5">
 
-						<app-card-welcome [hidden]="hiddenWelcome"
-							(notifyParent)="onNotify($event)"></app-card-welcome>
-					</div>
-				</div>
+				<app-card-welcome [hidden]="hiddenWelcome"
+					(notifyParent)="onNotify($event)"></app-card-welcome>
 			</div>
 		</div>
 	</div>

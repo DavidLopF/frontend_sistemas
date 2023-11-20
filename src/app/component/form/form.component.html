@@ -17,7 +17,9 @@
                     tu calificacion en matematicas</label>
                 <div class="mt-2">
                     <input id="math" name="math" type="math"
-                        autocomplete="math" required
+                        [(ngModel)]="mth"
+                        autocomplete="math"
+                        (keyup)="validateNumberInput($event)"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -28,7 +30,7 @@
                     tu calificación en expresión escrita</label>
                 <div class="mt-2">
                     <input id="we" name="we" type="number" autocomplete="we"
-                        required
+                        [(ngModel)]="we"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -39,7 +41,7 @@
                     tu calificación en ciencias naturales</label>
                 <div class="mt-2">
                     <input id="ns" name="ns" type="number" autocomplete="ns"
-                        required
+                        [(ngModel)]="ns"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -50,7 +52,7 @@
                     tu calificación en idioma extranjero</label>
                 <div class="mt-2">
                     <input id="fl" name="fl" type="number" autocomplete="fl"
-                        required
+                        [(ngModel)]="fl"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -61,7 +63,7 @@
                     tu calificación en ciencias sociales</label>
                 <div class="mt-2">
                     <input id="ss" name="ss" type="number" autocomplete="ss"
-                        required
+                        [(ngModel)]="ss"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -73,7 +75,6 @@
                     tu calificación en humanidades</label>
                 <div class="mt-2">
                     <input id="hum" name="hum" type="number" autocomplete="hum"
-                        required
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -84,7 +85,6 @@
                     tu calificación en ingeniería</label>
                 <div class="mt-2">
                     <input id="eng" name="eng" type="number" autocomplete="eng"
-                        required
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -95,7 +95,6 @@
                     tu calificación en ciencias</label>
                 <div class="mt-2">
                     <input id="sci" name="sci" type="number" autocomplete="sci"
-                        required
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -106,7 +105,7 @@
                     tu calificación en salud</label>
                 <div class="mt-2">
                     <input id="health" name="health" type="number"
-                        autocomplete="health" required
+                        autocomplete="health"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>

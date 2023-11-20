@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: black;
+}
+
+.parallax-container {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.parallax-bg {
+  background-image: url("https://www.unbosque.edu.co/sites/default/files/2020-12/Plazoleta%20Principal%20-%20Zonas%20Generales%20-%20U%20El%20Bosque%20-%20Bogota%20%281%29.jpg");
+  /* Ruta a la imagen */
+  background-size: cover;
+  background-position: center;
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Ajusta el valor de opacidad (0.5 en este caso) */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

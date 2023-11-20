@@ -75,6 +75,7 @@
                     tu calificación en humanidades</label>
                 <div class="mt-2">
                     <input id="hum" name="hum" type="number" autocomplete="hum"
+                        [(ngModel)]="hum"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -85,6 +86,7 @@
                     tu calificación en ingeniería</label>
                 <div class="mt-2">
                     <input id="eng" name="eng" type="number" autocomplete="eng"
+                        [(ngModel)]="eng"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -95,6 +97,7 @@
                     tu calificación en ciencias</label>
                 <div class="mt-2">
                     <input id="sci" name="sci" type="number" autocomplete="sci"
+                        [(ngModel)]="sci"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -106,6 +109,7 @@
                 <div class="mt-2">
                     <input id="health" name="health" type="number"
                         autocomplete="health"
+                        [(ngModel)]="health"
                         class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                 </div>
             </div>
@@ -117,6 +121,7 @@
             </div>
             <div [hidden]="hiddenSuccess">
                 <button type="submit"
+                    (click)="doTest()"
                     class="flex w-full justify-center rounded-md bg-green-500 hover:bg-green-700 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">hacer
                     test</button>
             </div>

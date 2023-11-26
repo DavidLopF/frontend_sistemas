@@ -10,13 +10,16 @@ import { FormComponent } from './component/form/form.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { ToastrModule } from 'ngx-toastr';
 import { FormsModule } from '@angular/forms';
+import { ResultsComponent } from './component/results/results.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CardWelcomeComponent,
-    FormComponent
+    FormComponent,
+    ResultsComponent,
   ],
   imports: [
     BrowserModule,

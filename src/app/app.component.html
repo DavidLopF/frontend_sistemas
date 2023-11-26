@@ -12,7 +12,9 @@
 				<app-card-welcome [hidden]="hiddenWelcome"
 					(notifyParent)="onNotify($event)"></app-card-welcome>
 
-				<app-form [hidden]="hiddenForm"></app-form>
+				<app-form [hidden]="hiddenForm" (notifyParent)="onNotify($event)"></app-form>
+
+				<app-results [hidden]="hiddenResults" [message]="message"></app-results>
 			</div>
 		</div>
 	</div>
